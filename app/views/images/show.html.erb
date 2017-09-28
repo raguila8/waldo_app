@@ -1,0 +1,14 @@
+<div class="image-container">
+  <%= image_tag(@image.name, alt: "Image 1")%>
+	<div id="dialog1" title="New Highscore!">
+		<input type="text" name="name" id="name">
+		<a href=<%=root_path%>>
+			<button id="name_button">Enter</button>
+		</a>
+  </div>
+	<div id="dialog2" title="You Found Everyone!">
+	  <a href=<%=root_path%>>
+		  <button id="congrats_button">OK</button>
+		</a>
+	</div>
+</div>

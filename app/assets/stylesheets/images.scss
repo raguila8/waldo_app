@@ -1,0 +1,86 @@
+// Place all the styles related to the Images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  /*padding-top: 100px;*/
+}
+
+.container {
+  margin-top: 104px;
+}
+
+.navbar-right li {
+  margin-right:50px;
+}
+
+.navbar-text {
+  font-size:25px;
+  margin-top:35px;
+  margin-left: 1%;
+}
+
+.navbar-left {
+	
+	padding: 10px;
+}
+
+.image-container {
+}
+
+.circle {
+  position: absolute;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  border: 1px solid white;
+  opacity: 0.8;
+  box-shadow: 0px 0px 5px green;
+  -webkit-transition-duration: 0.30s; /* Safari */
+  transition-duration: 0.30s;
+}
+
+.scale {
+  transform: scale(8, 8);
+}
+
+.found {
+  position: absolute;
+  color: red;
+  font-size: 9px;
+  font-weight: 500;
+  margin-left: -5px;
+  margin-top: -5px;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+
+}
+
+
+.ui-dialog-titlebar-close {
+	display: none 
+}
+
+.navbar-nav li .thumbnail {
+	background-color: #f8f8f8;
+	border: none;
+	height: 72px;
+}
+
+#odlaw {
+	padding-top: 10px;
+}
+
+/* image index */
+
+.image_title {
+	text-align: center;
+}
+
+.col-md-4 .images {
+	border: 1 solid #e7e7e7;
+}
+
+.col-md-4 .images a {
+	text-decoration: none;
+}

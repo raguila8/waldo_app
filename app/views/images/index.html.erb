@@ -1,0 +1,42 @@
+<div class="container">
+<% @images.each do |image| %>
+	<% current_highscores = @highscores.where(image_id: image.id).order(:time) %>
+  <% if image.id % 3 == 1 %>
+    <div class="row">
+  <% end %>
+  <div class="col-md-4">
+    <div class="thumbnail images">
+			<h3 class="image_title">Image <%= image.id %></h3>
+      <a href="/images/<%= image.id %>">
+        <%= image_tag(image.name, alt: "Image 1", style: "width:100%")%>
+        <div class="caption">
+          <p>Highscores</p>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Rank</th>
+								<th>Player</th>
+								<th>Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% count = 1 %>
+							<% current_highscores.each do |score| %>
+								<tr>
+									<td><%= count %></td>
+									<td><%= score.name %></td>
+									<td><%= score.time %></td>
+								</tr>
+								<% count += 1 %>
+							<% end %>
+						</tbody>
+					</table>
+				</div>
+		  </a>
+	  </div>
+	</div>
+  <% if image.id % 3 == 0 %>
+    </div>
+  <% end %>
+<% end %>
+</div>

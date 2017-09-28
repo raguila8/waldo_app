@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'highscores/create'
 
-  root 'application#hello'
+  root 'images#index'
+  get '/images/:image', to: 'images#show'
+  post '/highscores', to: 'highscores#create'
 end
