@@ -4,6 +4,6 @@ class UpdateColumns < ActiveRecord::Migration[5.1]
 			#t.change :time, :float
 			#t.change :time, 'float USING CAST(time AS float)'
 		end
-		change_column :highscores, :time, 'float USING CAST(time AS float)'
+		#change_column :highscores, :time, 'float USING CAST(time AS float)'
   end
 end

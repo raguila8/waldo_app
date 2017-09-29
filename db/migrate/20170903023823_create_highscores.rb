@@ -2,7 +2,7 @@ class CreateHighscores < ActiveRecord::Migration[5.1]
   def change
     create_table :highscores do |t|
       t.string :name
-      t.time :time
+      t.time :float
 
       t.timestamps
     end
