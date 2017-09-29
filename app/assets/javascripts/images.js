@@ -95,7 +95,7 @@ $(document).on('turbolinks:load', function() {
 						image_id: imageId
 					}
 				});
-				$(this).trigger('click');
+				//$(this).trigger('click');
 				$('#dialog1').dialog("close");
 			});
     }
