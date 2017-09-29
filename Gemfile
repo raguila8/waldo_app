@@ -61,6 +61,7 @@ group :test do
 end
 
 group :production do
+	gem 'fastimage'
   gem 'pg', '0.18.4'
 end
 
