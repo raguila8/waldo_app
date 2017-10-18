@@ -21,7 +21,7 @@ The app contains a collection of large images where the user is meant to find se
 $ bundle install --without production
 ```
 
-This arranges to skip the pg gem for PostgreSQL in development and use SQLite for development and testing. In case you've previously installed a version of a gem (such as Rails) other than the one specified by the Gemfile, it's a good idea to update the fems with `bundle install` to make sure the versions match:
+This arranges to skip the pg gem for PostgreSQL in development and use SQLite for development and testing. In case you've previously installed a version of a gem (such as Rails) other than the one specified by the Gemfile, it's a good idea to update the gems with `bundle install` to make sure the versions match:
 
 ```linux
 $ bundle update
