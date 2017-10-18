@@ -13,6 +13,8 @@ The app contains a collection of large images where the user is meant to find se
 
 * Rails version - 5.1.4
 
+## Running Locally
+
 * Configuration - run `bundle install` to install and include the gems specified in the `Gemfile`, while skipping the installation gems using the option `--without production`:
 
 ```linux
@@ -25,12 +27,9 @@ This arranges to skip the pg gem for PostgreSQL in development and use SQLite fo
 $ bundle update
 ```
 
+### Database
 
-* Database creation - run `rails db:migrate` to migrate your database and then populate the database with `rails db:seed` using the `seeds.rb` file.
-
-```linux
-$ rails db:migrate
-```
+There are a total of 3 tables that store all the data. The `images` table stores the images and their dimensions. The `characters` table stores the characters to find and their coordinates (x, y) within the image. The `highscores` table stores all the highscores for each image. To seed the database I use the standard ruby file `db/seeds.rb`.
 
 ```linux
 $ rails db:seed
